@@ -2,8 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
-Маркетплейс плагинов Claude для рекламных кабинетов: **Яндекс Директ, VK Ads и Яндекс
-Метрика** прямо в диалоге с Claude. От команды [Ask Ads](https://askads.ru) — чат-аналитика
+Маркетплейс плагинов Claude для рекламных кабинетов: **Яндекс Директ, VK Ads, Яндекс
+Метрика и Вордстат** прямо в диалоге с Claude. От команды [Ask Ads](https://askads.ru) — чат-аналитика
 и сторожа рекламных кабинетов.
 
 ## Быстрый старт
@@ -27,6 +27,7 @@
 | `yandex-direct-api` | Полный Yandex Direct API v5 со **своим** токеном через [mcp-yandex-direct](https://github.com/askads/mcp-yandex-direct): статистика, фразы, ставки, бюджеты — включая write-инструменты с подтверждением | Node.js 18+ и OAuth-токен Директа (спросит при включении) |
 | `vk-ads` | VK Реклама через [mcp-vk-ads](https://github.com/askads/mcp-vk-ads): кампании, баннеры, статистика, бюджеты | Node.js 18+ и токен VK Ads API (спросит при включении) |
 | `yandex-metrica` | Яндекс Метрика через [mcp-yandex-metrica](https://github.com/askads/mcp-yandex-metrica): счётчики, цели, отчёты по трафику и конверсиям | Node.js 18+ и OAuth-токен Метрики (спросит при включении) |
+| `yandex-wordstat` | Поисковый спрос Вордстата через [mcp-yandex-wordstat](https://github.com/askads/mcp-yandex-wordstat): частотность, похожие запросы, сезонность и география | Node.js 18+ и API-ключ Yandex Cloud (спросит при включении) |
 
 Токены local-плагинов запрашиваются диалогом при включении и хранятся в системном
 keychain — руками править конфиги не нужно. Где взять токен — в README соответствующего
@@ -50,8 +51,8 @@ Settings → Connectors → **Add custom connector** → `https://mcp.askads.clo
 
 ## English
 
-Claude plugin marketplace for Russian ad platforms — **Yandex Direct, VK Ads and Yandex
-Metrica**. The flagship `yandex-direct` plugin is a zero-setup, strictly read-only remote
+Claude plugin marketplace for Russian ad platforms — **Yandex Direct, VK Ads, Yandex
+Metrica and Wordstat**. The flagship `yandex-direct` plugin is a zero-setup, strictly read-only remote
 connector (OAuth with your Yandex account, nothing to install); the other plugins run the
 open-source MCP servers locally with your own API tokens (prompted on enable, stored in
 the system keychain).

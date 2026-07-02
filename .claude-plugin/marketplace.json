@@ -4,55 +4,116 @@
     "name": "Ask Ads",
     "email": "support@askads.ru"
   },
-  "description": "Yandex Direct, VK Ads and Yandex Metrica in Claude — a zero-setup read-only connector plus local MCP servers for power users. By Ask Ads (askads.ru).",
+  "description": "Yandex Direct, VK Ads, Yandex Metrica and Wordstat in Claude — a zero-setup read-only connector plus local MCP servers for power users. By Ask Ads (askads.ru).",
   "plugins": [
     {
       "name": "yandex-direct",
       "source": "./plugins/yandex-direct",
       "displayName": "Yandex Direct — Ask Ads connector",
       "description": "Read-only Yandex Direct via the Ask Ads remote MCP: campaigns, performance stats, balance & overdraft, Metrica conversions. Zero setup — sign in with Yandex (OAuth), nothing to install. Includes a skill and /yandex-direct:audit command.",
-      "author": { "name": "Ask Ads", "email": "support@askads.ru" },
+      "author": {
+        "name": "Ask Ads",
+        "email": "support@askads.ru"
+      },
       "homepage": "https://mcp.askads.cloud",
       "repository": "https://github.com/askads/claude-plugins",
       "license": "MIT",
       "category": "marketing",
-      "keywords": ["yandex-direct", "yandex", "ppc", "advertising", "analytics", "read-only", "russian"]
+      "keywords": [
+        "yandex-direct",
+        "yandex",
+        "ppc",
+        "advertising",
+        "analytics",
+        "read-only",
+        "russian"
+      ]
     },
     {
       "name": "yandex-direct-api",
       "source": "./plugins/yandex-direct-api",
       "displayName": "Yandex Direct API (own token)",
       "description": "Full Yandex Direct API v5 with YOUR OAuth token via the mcp-yandex-direct npm server: statistics, keywords, bids, budgets — including write tools behind explicit confirmation. Requires Node.js 18+ and a Yandex Direct API token (prompted on enable).",
-      "author": { "name": "Ask Ads", "email": "support@askads.ru" },
+      "author": {
+        "name": "Ask Ads",
+        "email": "support@askads.ru"
+      },
       "homepage": "https://github.com/askads/mcp-yandex-direct",
       "repository": "https://github.com/askads/claude-plugins",
       "license": "MIT",
       "category": "marketing",
-      "keywords": ["yandex-direct", "yandex", "ppc", "advertising", "api", "russian"]
+      "keywords": [
+        "yandex-direct",
+        "yandex",
+        "ppc",
+        "advertising",
+        "api",
+        "russian"
+      ]
     },
     {
       "name": "vk-ads",
       "source": "./plugins/vk-ads",
       "displayName": "VK Ads (own token)",
       "description": "VK Ads (VK Реклама) via the mcp-vk-ads npm server with your API token: ad plans, banners, statistics, budgets. Requires Node.js 18+ and a VK Ads access token (prompted on enable).",
-      "author": { "name": "Ask Ads", "email": "support@askads.ru" },
+      "author": {
+        "name": "Ask Ads",
+        "email": "support@askads.ru"
+      },
       "homepage": "https://github.com/askads/mcp-vk-ads",
       "repository": "https://github.com/askads/claude-plugins",
       "license": "MIT",
       "category": "marketing",
-      "keywords": ["vk-ads", "vk", "advertising", "analytics", "russian"]
+      "keywords": [
+        "vk-ads",
+        "vk",
+        "advertising",
+        "analytics",
+        "russian"
+      ]
     },
     {
       "name": "yandex-metrica",
       "source": "./plugins/yandex-metrica",
       "displayName": "Yandex Metrica (own token)",
       "description": "Yandex Metrica web analytics via the mcp-yandex-metrica npm server with your OAuth token: counters, goals, traffic and conversion reports. Requires Node.js 18+ and a Metrica OAuth token (prompted on enable).",
-      "author": { "name": "Ask Ads", "email": "support@askads.ru" },
+      "author": {
+        "name": "Ask Ads",
+        "email": "support@askads.ru"
+      },
       "homepage": "https://github.com/askads/mcp-yandex-metrica",
       "repository": "https://github.com/askads/claude-plugins",
       "license": "MIT",
       "category": "marketing",
-      "keywords": ["yandex-metrica", "yandex", "analytics", "web-analytics", "russian"]
+      "keywords": [
+        "yandex-metrica",
+        "yandex",
+        "analytics",
+        "web-analytics",
+        "russian"
+      ]
+    },
+    {
+      "name": "yandex-wordstat",
+      "source": "./plugins/yandex-wordstat",
+      "displayName": "Yandex Wordstat (own API key)",
+      "description": "Yandex Wordstat search demand via the mcp-yandex-wordstat npm server: keyword frequency, related queries, seasonality and regional demand. Requires Node.js 18+ and a Yandex Cloud API key (prompted on enable).",
+      "author": {
+        "name": "Ask Ads",
+        "email": "support@askads.ru"
+      },
+      "homepage": "https://github.com/askads/mcp-yandex-wordstat",
+      "repository": "https://github.com/askads/claude-plugins",
+      "license": "MIT",
+      "category": "marketing",
+      "keywords": [
+        "yandex-wordstat",
+        "wordstat",
+        "yandex",
+        "keywords",
+        "seo",
+        "search-demand"
+      ]
     }
   ]
 }

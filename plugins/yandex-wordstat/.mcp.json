@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "yandex-wordstat": {
+      "command": "npx",
+      "args": ["-y", "mcp-yandex-wordstat@2"],
+      "env": {
+        "WORDSTAT_API_KEY": "${user_config.api_key}",
+        "WORDSTAT_FOLDER_ID": "${user_config.folder_id}"
+      }
+    }
+  }
+}
