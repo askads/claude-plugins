@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "yandex-metrica": {
+      "command": "npx",
+      "args": ["-y", "mcp-yandex-metrica@1"],
+      "env": {
+        "YANDEX_METRIKA_TOKEN": "${user_config.token}",
+        "YANDEX_METRIKA_COUNTER_ID": "${user_config.counter_id}"
+      }
+    }
+  }
+}

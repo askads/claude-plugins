@@ -1,0 +1,36 @@
+{
+  "name": "yandex-direct-api",
+  "displayName": "Yandex Direct API (own token)",
+  "version": "1.0.0",
+  "description": "Full Yandex Direct API v5 with your own OAuth token via the mcp-yandex-direct npm server: statistics, keywords, bids, budgets — including write tools behind explicit confirmation. Requires Node.js 18+.",
+  "author": {
+    "name": "Ask Ads",
+    "email": "support@askads.ru",
+    "url": "https://askads.ru"
+  },
+  "homepage": "https://github.com/askads/mcp-yandex-direct",
+  "repository": "https://github.com/askads/claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "yandex-direct",
+    "yandex",
+    "ppc",
+    "advertising",
+    "api"
+  ],
+  "userConfig": {
+    "token": {
+      "type": "string",
+      "title": "Yandex Direct OAuth token",
+      "description": "OAuth token with Yandex Direct API access — see github.com/askads/mcp-yandex-direct for how to get one",
+      "sensitive": true,
+      "required": true
+    },
+    "client_login": {
+      "type": "string",
+      "title": "Client login (agencies only)",
+      "description": "Managed client login for agency tokens; leave empty for a regular advertiser account",
+      "default": ""
+    }
+  }
+}

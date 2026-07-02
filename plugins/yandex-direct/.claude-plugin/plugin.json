@@ -1,0 +1,22 @@
+{
+  "name": "yandex-direct",
+  "displayName": "Yandex Direct — Ask Ads connector",
+  "version": "1.0.0",
+  "description": "Read-only Yandex Direct via the Ask Ads remote MCP: campaigns, performance stats, balance & overdraft, Metrica conversions. Zero setup — sign in with Yandex (OAuth), nothing to install.",
+  "author": {
+    "name": "Ask Ads",
+    "email": "support@askads.ru",
+    "url": "https://askads.ru"
+  },
+  "homepage": "https://mcp.askads.cloud",
+  "repository": "https://github.com/askads/claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "yandex-direct",
+    "yandex",
+    "ppc",
+    "advertising",
+    "analytics",
+    "read-only"
+  ]
+}

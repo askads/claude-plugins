@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "yandex-direct": {
+      "type": "http",
+      "url": "https://mcp.askads.cloud/mcp"
+    }
+  }
+}

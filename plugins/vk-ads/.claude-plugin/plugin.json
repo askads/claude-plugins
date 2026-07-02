@@ -1,0 +1,29 @@
+{
+  "name": "vk-ads",
+  "displayName": "VK Ads (own token)",
+  "version": "1.0.0",
+  "description": "VK Ads (VK Реклама) via the mcp-vk-ads npm server with your API token: ad plans, banners, statistics, budgets. Requires Node.js 18+.",
+  "author": {
+    "name": "Ask Ads",
+    "email": "support@askads.ru",
+    "url": "https://askads.ru"
+  },
+  "homepage": "https://github.com/askads/mcp-vk-ads",
+  "repository": "https://github.com/askads/claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "vk-ads",
+    "vk",
+    "advertising",
+    "analytics"
+  ],
+  "userConfig": {
+    "token": {
+      "type": "string",
+      "title": "VK Ads access token",
+      "description": "VK Ads API access token — see github.com/askads/mcp-vk-ads for how to get one",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}

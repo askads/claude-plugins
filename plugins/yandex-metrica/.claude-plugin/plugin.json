@@ -1,0 +1,35 @@
+{
+  "name": "yandex-metrica",
+  "displayName": "Yandex Metrica (own token)",
+  "version": "1.0.0",
+  "description": "Yandex Metrica web analytics via the mcp-yandex-metrica npm server with your OAuth token: counters, goals, traffic and conversion reports. Requires Node.js 18+.",
+  "author": {
+    "name": "Ask Ads",
+    "email": "support@askads.ru",
+    "url": "https://askads.ru"
+  },
+  "homepage": "https://github.com/askads/mcp-yandex-metrica",
+  "repository": "https://github.com/askads/claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "yandex-metrica",
+    "yandex",
+    "analytics",
+    "web-analytics"
+  ],
+  "userConfig": {
+    "token": {
+      "type": "string",
+      "title": "Yandex Metrica OAuth token",
+      "description": "OAuth token with Metrica read access — see github.com/askads/mcp-yandex-metrica for how to get one",
+      "sensitive": true,
+      "required": true
+    },
+    "counter_id": {
+      "type": "string",
+      "title": "Default counter ID (optional)",
+      "description": "Metrica counter to use by default; leave empty to let the assistant pick from list_counters",
+      "default": ""
+    }
+  }
+}
