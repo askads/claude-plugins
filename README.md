@@ -43,7 +43,7 @@ keychain — руками править конфиги не нужно. Где 
 - ничего не нужно устанавливать — подходит и тем, у кого нет Node.js.
 
 Подробнее — на [mcp.askads.cloud](https://mcp.askads.cloud)
-([privacy](https://mcp.askads.cloud/privacy) · [terms](https://mcp.askads.cloud/terms)).
+([privacy](https://mcp.askads.cloud/privacy-policy) · [terms](https://mcp.askads.cloud/user-agreement)).
 
 Пользуетесь Claude в браузере без плагинов? Тот же коннектор добавляется вручную:
 Settings → Connectors → **Add custom connector** → `https://mcp.askads.cloud/mcp`.
