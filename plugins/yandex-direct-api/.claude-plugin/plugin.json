@@ -2,7 +2,7 @@
   "name": "yandex-direct-api",
   "displayName": "Yandex Direct API (own token)",
   "version": "1.0.0",
-  "description": "Full Yandex Direct API v5 with your own OAuth token via the mcp-yandex-direct npm server: statistics, keywords, bids, budgets — including write tools behind explicit confirmation. Requires Node.js 18+.",
+  "description": "Full Yandex Direct API v5 with your own OAuth token via the mcp-yandex-direct npm server: statistics, keywords, bids, budgets — including write tools behind explicit confirmation. Requires Node.js 20+.",
   "author": {
     "name": "Ask Ads",
     "email": "support@askads.ru",

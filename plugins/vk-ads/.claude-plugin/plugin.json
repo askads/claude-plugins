@@ -2,7 +2,7 @@
   "name": "vk-ads",
   "displayName": "VK Ads (own token)",
   "version": "1.0.0",
-  "description": "VK Ads (VK Реклама) via the mcp-vk-ads npm server with your API token: ad plans, banners, statistics, budgets. Requires Node.js 18+.",
+  "description": "VK Ads (VK Реклама) via the mcp-vk-ads npm server with your API token: ad plans, banners, statistics, budgets. Requires Node.js 20+.",
   "author": {
     "name": "Ask Ads",
     "email": "support@askads.ru",

@@ -2,7 +2,7 @@
   "mcpServers": {
     "yandex-direct-api": {
       "command": "npx",
-      "args": ["-y", "mcp-yandex-direct@1"],
+      "args": ["-y", "mcp-yandex-direct@1.2.0"],
       "env": {
         "YANDEX_DIRECT_TOKEN": "${user_config.token}",
         "YANDEX_DIRECT_LOGIN": "${user_config.client_login}"

@@ -33,7 +33,7 @@
       "name": "yandex-direct-api",
       "source": "./plugins/yandex-direct-api",
       "displayName": "Yandex Direct API (own token)",
-      "description": "Full Yandex Direct API v5 with YOUR OAuth token via the mcp-yandex-direct npm server: statistics, keywords, bids, budgets — including write tools behind explicit confirmation. Requires Node.js 18+ and a Yandex Direct API token (prompted on enable).",
+      "description": "Full Yandex Direct API v5 with YOUR OAuth token via the mcp-yandex-direct npm server: statistics, keywords, bids, budgets — including write tools behind explicit confirmation. Requires Node.js 20+ and a Yandex Direct API token (prompted on enable).",
       "author": {
         "name": "Ask Ads",
         "email": "support@askads.ru"
@@ -55,7 +55,7 @@
       "name": "vk-ads",
       "source": "./plugins/vk-ads",
       "displayName": "VK Ads (own token)",
-      "description": "VK Ads (VK Реклама) via the mcp-vk-ads npm server with your API token: ad plans, banners, statistics, budgets. Requires Node.js 18+ and a VK Ads access token (prompted on enable).",
+      "description": "VK Ads (VK Реклама) via the mcp-vk-ads npm server with your API token: ad plans, banners, statistics, budgets. Requires Node.js 20+ and a VK Ads access token (prompted on enable).",
       "author": {
         "name": "Ask Ads",
         "email": "support@askads.ru"
@@ -76,7 +76,7 @@
       "name": "yandex-metrica",
       "source": "./plugins/yandex-metrica",
       "displayName": "Yandex Metrica (own token)",
-      "description": "Yandex Metrica web analytics via the mcp-yandex-metrica npm server with your OAuth token: counters, goals, traffic and conversion reports. Requires Node.js 18+ and a Metrica OAuth token (prompted on enable).",
+      "description": "Yandex Metrica web analytics via the mcp-yandex-metrica npm server with your OAuth token: counters, goals, traffic and conversion reports. Requires Node.js 20+ and a Metrica OAuth token (prompted on enable).",
       "author": {
         "name": "Ask Ads",
         "email": "support@askads.ru"
@@ -97,7 +97,7 @@
       "name": "yandex-wordstat",
       "source": "./plugins/yandex-wordstat",
       "displayName": "Yandex Wordstat (own API key)",
-      "description": "Yandex Wordstat search demand via the mcp-yandex-wordstat npm server: keyword frequency, related queries, seasonality and regional demand. Requires Node.js 18+ and a Yandex Cloud API key (prompted on enable).",
+      "description": "Yandex Wordstat search demand via the mcp-yandex-wordstat npm server: keyword frequency, related queries, seasonality and regional demand. Requires Node.js 20+ and a Yandex Cloud API key (prompted on enable).",
       "author": {
         "name": "Ask Ads",
         "email": "support@askads.ru"

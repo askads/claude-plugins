@@ -2,7 +2,7 @@
   "mcpServers": {
     "vk-ads": {
       "command": "npx",
-      "args": ["-y", "mcp-vk-ads@1"],
+      "args": ["-y", "mcp-vk-ads@1.2.1"],
       "env": {
         "VK_ADS_TOKEN": "${user_config.token}"
       }

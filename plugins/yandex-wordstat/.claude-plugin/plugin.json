@@ -2,7 +2,7 @@
   "name": "yandex-wordstat",
   "displayName": "Yandex Wordstat (own API key)",
   "version": "1.0.0",
-  "description": "Yandex Wordstat search demand via the mcp-yandex-wordstat npm server: keyword frequency, related queries, seasonality and regional demand. Requires Node.js 18+ and a Yandex Cloud API key (prompted on enable).",
+  "description": "Yandex Wordstat search demand via the mcp-yandex-wordstat npm server: keyword frequency, related queries, seasonality and regional demand. Requires Node.js 20+ and a Yandex Cloud API key (prompted on enable).",
   "author": { "name": "Ask Ads", "email": "support@askads.ru", "url": "https://askads.ru" },
   "homepage": "https://github.com/askads/mcp-yandex-wordstat",
   "repository": "https://github.com/askads/claude-plugins",

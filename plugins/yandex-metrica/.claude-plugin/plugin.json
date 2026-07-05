@@ -2,7 +2,7 @@
   "name": "yandex-metrica",
   "displayName": "Yandex Metrica (own token)",
   "version": "1.0.0",
-  "description": "Yandex Metrica web analytics via the mcp-yandex-metrica npm server with your OAuth token: counters, goals, traffic and conversion reports. Requires Node.js 18+.",
+  "description": "Yandex Metrica web analytics via the mcp-yandex-metrica npm server with your OAuth token: counters, goals, traffic and conversion reports. Requires Node.js 20+.",
   "author": {
     "name": "Ask Ads",
     "email": "support@askads.ru",
