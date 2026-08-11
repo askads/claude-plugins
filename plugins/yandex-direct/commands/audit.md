@@ -4,6 +4,12 @@ description: Быстрый аудит кабинета Яндекс Дирек�
 
 Проведи аудит подключённого кабинета Яндекс Директа. Действуй по шагам:
 
+0. Если тулы Директа (`get_account_info`, `list_campaigns`, …) в этом чате недоступны —
+   не продолжай и не выдумывай данные. Объясни пользователю, как авторизовать коннектор:
+   - Claude Code: команда `/mcp` → выбрать `yandex-direct` → Authenticate (вход через Яндекс);
+   - Claude Desktop / claude.ai: Settings → Connectors → коннектор Ask Ads → Connect;
+     если коннектора нет в списке — Add custom connector → `https://mcp.askads.cloud/mcp`.
+   После авторизации пусть откроет новый чат и снова запустит `/yandex-direct:audit`.
 1. `get_account_info` — валюта и тип кабинета; `get_balance` — баланс единого счёта.
    Остаток овердрафта возьми из `get_account_info` с `fieldNames: ["OverdraftSumAvailable"]`
    (микроединицы → дели на 1 000 000). Показы под угрозой, только если

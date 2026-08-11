@@ -6,14 +6,26 @@
 
 ## Быстрый старт
 
-В Claude Code (или Claude Desktop → вкладка плагинов):
+**Claude Code** — две команды, каждая отдельным сообщением:
 
 ```
 /plugin marketplace add askads/claude-plugins
+```
+
+```
 /plugin install yandex-direct@askads
 ```
 
-Дальше Claude предложит войти через Яндекс (OAuth) — и можно спрашивать: «какие кампании тратят бюджет без конверсий?», «сколько денег на счёте?», или запустить готовый аудит: `/yandex-direct:audit`.
+**Claude Desktop** — без команд, через интерфейс: Settings → Plugins → **Add from repository** → `askads/claude-plugins` → выбрать плагины.
+
+**Claude в браузере (claude.ai)** — плагины не нужны, тот же коннектор добавляется напрямую: Settings → Connectors → **Add custom connector** → `https://mcp.askads.cloud/mcp`.
+
+Первое обращение к Директу предложит войти через Яндекс (OAuth) — и можно спрашивать: «какие кампании тратят бюджет без конверсий?», «сколько денег на счёте?», или запустить готовый аудит: `/yandex-direct:audit`.
+
+**Claude пишет, что не видит тулы Директа?** Коннектор ещё не авторизован:
+
+- Claude Code: `/mcp` → выбрать `yandex-direct` → Authenticate (вход через Яндекс);
+- Desktop / браузер: Settings → Connectors → коннектор Ask Ads → Connect, затем открыть новый чат.
 
 ## Плагины
 
@@ -38,14 +50,17 @@
 
 Подробнее — на [mcp.askads.cloud](https://mcp.askads.cloud) ([privacy](https://mcp.askads.cloud/privacy-policy) · [terms](https://mcp.askads.cloud/user-agreement)).
 
-Пользуетесь Claude в браузере без плагинов? Тот же коннектор добавляется вручную: Settings → Connectors → **Add custom connector** → `https://mcp.askads.cloud/mcp`.
-
 ## English
 
 Claude plugin marketplace for Russian ad platforms — **Yandex Direct, VK Ads, Yandex Metrica and Wordstat**. The flagship `yandex-direct` plugin is a zero-setup, strictly read-only remote connector (OAuth with your Yandex account, nothing to install); the other plugins run the open-source MCP servers locally with your own API tokens (prompted on enable, stored in the system keychain). Wordstat additionally asks for a Yandex Cloud folder ID along with its API key.
 
+In Claude Code, run the two commands below one at a time; in Claude Desktop use Settings → Plugins → **Add from repository** → `askads/claude-plugins`; on claude.ai add the connector directly: Settings → Connectors → **Add custom connector** → `https://mcp.askads.cloud/mcp`.
+
 ```
 /plugin marketplace add askads/claude-plugins
+```
+
+```
 /plugin install yandex-direct@askads
 ```
 

@@ -10,6 +10,16 @@ description: Working with Yandex Direct ad accounts through the Ask Ads MCP tool
 что коннектор только читает, и предложи конкретные шаги для ручного изменения
 в интерфейсе Директа.
 
+## Если тулы Директа недоступны
+
+Не гадай и не выдумывай данные — коннектор не авторизован. Дай пользователю шаги:
+
+- Claude Code: `/mcp` → выбрать `yandex-direct` → Authenticate (вход через Яндекс);
+- Claude Desktop / claude.ai: Settings → Connectors → коннектор Ask Ads → Connect;
+  если коннектора нет в списке — Add custom connector → `https://mcp.askads.cloud/mcp`.
+
+После авторизации — открыть новый чат и повторить запрос.
+
 ## С чего начинать
 
 1. `get_account_info` — логин, **валюта кабинета**, тип (агентство/рекламодатель).
