@@ -4,13 +4,13 @@
     "name": "Ask Ads",
     "email": "support@askads.ru"
   },
-  "description": "Yandex Direct, VK Ads, Yandex Metrica and Wordstat in Claude — a zero-setup read-only connector plus local MCP servers for power users. By Ask Ads (askads.ru).",
+  "description": "Yandex Direct, VK Ads, Yandex Metrica, Webmaster and Wordstat in Claude — a zero-setup read-only connector plus local MCP servers for power users. By Ask Ads (askads.ru).",
   "plugins": [
     {
       "name": "yandex-direct",
       "source": "./plugins/yandex-direct",
       "displayName": "Yandex Direct — Ask Ads connector",
-      "description": "Read-only Yandex Direct via the Ask Ads remote MCP: campaigns, performance stats, balance & overdraft, Metrica conversions. Zero setup — sign in with Yandex (OAuth), nothing to install. Includes a skill and /yandex-direct:audit command.",
+      "description": "Read-only Yandex Direct via the Ask Ads remote MCP: campaigns, performance stats, balance & overdraft, plus Yandex Metrica conversions and Yandex Webmaster search data. Zero setup — sign in with Yandex (OAuth), nothing to install. Includes a skill and /yandex-direct:audit command.",
       "author": {
         "name": "Ask Ads",
         "email": "support@askads.ru"
@@ -26,14 +26,16 @@
         "advertising",
         "analytics",
         "read-only",
-        "russian"
+        "russian",
+        "yandex-metrica",
+        "yandex-webmaster"
       ]
     },
     {
       "name": "yandex-direct-api",
       "source": "./plugins/yandex-direct-api",
-      "displayName": "Yandex Direct API (own token)",
-      "description": "Full Yandex Direct API v5 with YOUR OAuth token via the mcp-yandex-direct npm server: statistics, keywords, bids, budgets — including write tools behind explicit confirmation. Requires Node.js 20+ and a Yandex Direct API token (prompted on enable).",
+      "displayName": "Yandex Direct API (local server)",
+      "description": "Full Yandex Direct API v5 via the local mcp-yandex-direct npm server: statistics, keywords, bids, budgets — including write tools. Sign in with Yandex right in the chat; a ready-made token is optional (for CI). Requires Node.js 20+.",
       "author": {
         "name": "Ask Ads",
         "email": "support@askads.ru"
@@ -54,8 +56,8 @@
     {
       "name": "vk-ads",
       "source": "./plugins/vk-ads",
-      "displayName": "VK Ads (own token)",
-      "description": "VK Ads (VK Реклама) via the mcp-vk-ads npm server with your API token: ad plans, banners, statistics, budgets. Requires Node.js 20+ and a VK Ads access token (prompted on enable).",
+      "displayName": "VK Ads (local server)",
+      "description": "VK Ads (VK Реклама) via the local mcp-vk-ads npm server: ad plans, banners, statistics, budgets. Connect from the chat with your VK Ads API app (client_id + client_secret, auto-refreshed); a ready-made token is optional (agency clients, CI). Requires Node.js 20+.",
       "author": {
         "name": "Ask Ads",
         "email": "support@askads.ru"
@@ -75,8 +77,8 @@
     {
       "name": "yandex-metrica",
       "source": "./plugins/yandex-metrica",
-      "displayName": "Yandex Metrica (own token)",
-      "description": "Yandex Metrica web analytics via the mcp-yandex-metrica npm server with your OAuth token: counters, goals, traffic and conversion reports. Requires Node.js 20+ and a Metrica OAuth token (prompted on enable).",
+      "displayName": "Yandex Metrica (local server)",
+      "description": "Yandex Metrica web analytics via the local mcp-yandex-metrica npm server: counters, goals, traffic and conversion reports. Sign in with Yandex right in the chat; a ready-made token is optional (for CI). Requires Node.js 20+.",
       "author": {
         "name": "Ask Ads",
         "email": "support@askads.ru"
@@ -90,6 +92,28 @@
         "yandex",
         "analytics",
         "web-analytics",
+        "russian"
+      ]
+    },
+    {
+      "name": "yandex-webmaster",
+      "source": "./plugins/yandex-webmaster",
+      "displayName": "Yandex Webmaster (local server)",
+      "description": "Yandex Webmaster via the local mcp-yandex-webmaster npm server: site diagnostics, indexing, search queries, sitemaps, external links, recrawl. Sign in with Yandex right in the chat; a ready-made token is optional (for CI). Requires Node.js 20+.",
+      "author": {
+        "name": "Ask Ads",
+        "email": "support@askads.ru"
+      },
+      "homepage": "https://github.com/askads/mcp-yandex-webmaster",
+      "repository": "https://github.com/askads/claude-plugins",
+      "license": "MIT",
+      "category": "marketing",
+      "keywords": [
+        "yandex-webmaster",
+        "webmaster",
+        "yandex",
+        "seo",
+        "indexing",
         "russian"
       ]
     },

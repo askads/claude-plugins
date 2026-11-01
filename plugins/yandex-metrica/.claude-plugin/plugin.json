@@ -1,8 +1,8 @@
 {
   "name": "yandex-metrica",
-  "displayName": "Yandex Metrica (own token)",
-  "version": "1.0.0",
-  "description": "Yandex Metrica web analytics via the mcp-yandex-metrica npm server with your OAuth token: counters, goals, traffic and conversion reports. Requires Node.js 20+.",
+  "displayName": "Yandex Metrica (local server)",
+  "version": "1.1.0",
+  "description": "Yandex Metrica web analytics via the local mcp-yandex-metrica npm server: counters, goals, traffic and conversion reports. Sign in with Yandex right in the chat; a ready-made token is optional (for CI). Requires Node.js 20+.",
   "author": {
     "name": "Ask Ads",
     "email": "support@askads.ru",
@@ -20,10 +20,11 @@
   "userConfig": {
     "token": {
       "type": "string",
-      "title": "Yandex Metrica OAuth token",
-      "description": "OAuth token with Metrica read access — see github.com/askads/mcp-yandex-metrica for how to get one",
+      "title": "Yandex Metrica OAuth token (optional)",
+      "description": "Leave empty to sign in with Yandex from the chat (\"connect Yandex Metrica\"). Set only for CI or headless setups; needs metrika:read.",
       "sensitive": true,
-      "required": true
+      "required": false,
+      "default": ""
     },
     "counter_id": {
       "type": "string",
