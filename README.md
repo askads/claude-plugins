@@ -38,7 +38,7 @@
 | `yandex-webmaster` | Яндекс Вебмастер через [mcp-yandex-webmaster](https://github.com/askads/mcp-yandex-webmaster): диагностика сайта, индексация, поисковые запросы, sitemap, внешние ссылки, переобход | Node.js 20+; вход через Яндекс прямо в чате |
 | `yandex-wordstat` | Поисковый спрос Вордстата через [mcp-yandex-wordstat](https://github.com/askads/mcp-yandex-wordstat): частотность, похожие запросы, сезонность и география | Node.js 20+, API-ключ и ID каталога Yandex Cloud (спросит при включении) |
 
-Директ, Метрика, Вебмастер и VK Ads подключаются прямо в диалоге: скажите «подключи Яндекс Директ» (или Метрику, Вебмастер, ВК Рекламу), и сервер проведёт через вход. Поле токена при включении плагина можно оставить пустым — оно нужно только для CI и кабинетов клиентов агентства в VK Ads. Вордстату нужны API-ключ и ID каталога Yandex Cloud: их плагин спросит при включении. Всё, что введено при включении, хранится в системном keychain — руками править конфиги не нужно.
+Директ, Метрика, Вебмастер и VK Ads подключаются прямо в диалоге: скажите «подключи Яндекс Директ» (или Метрику, Вебмастер, ВК Рекламу), и сервер проведёт через вход. Поле токена при включении плагина можно оставить пустым — готовый токен нужен только там, где диалога нет (CI, headless-установки), и для кабинетов клиентов агентства в VK Ads. Вордстату нужны API-ключ и ID каталога Yandex Cloud: их плагин спросит при включении. Руками править конфиги не нужно: токены и ключи хранятся в системном keychain, остальные поля (логин клиента, счётчик, сайт, ID каталога) — в `settings.json`.
 
 ## Флагман: `yandex-direct`
 
@@ -53,7 +53,7 @@
 
 ## English
 
-Claude plugin marketplace for Russian ad platforms — **Yandex Direct, VK Ads, Yandex Metrica, Webmaster and Wordstat**. The flagship `yandex-direct` plugin is a zero-setup, strictly read-only remote connector (OAuth with your Yandex account, nothing to install). The other plugins run the open-source MCP servers locally; Direct, Metrica, Webmaster and VK Ads connect right in the chat, so the token field on enable can stay empty (it is for CI only). Wordstat asks for a Yandex Cloud API key and folder ID on enable.
+Claude plugin marketplace for Russian ad platforms — **Yandex Direct, VK Ads, Yandex Metrica, Webmaster and Wordstat**. The flagship `yandex-direct` plugin is a zero-setup, strictly read-only remote connector (OAuth with your Yandex account, nothing to install). The other plugins run the open-source MCP servers locally; Direct, Metrica, Webmaster and VK Ads connect right in the chat, so the token field on enable can stay empty: a ready-made token is only for setups without a chat (CI, headless) and for VK Ads agency client accounts. Tokens and keys go to the system keychain, other fields to `settings.json`. Wordstat asks for a Yandex Cloud API key and folder ID on enable.
 
 In Claude Code, run the two commands below one at a time; in Claude Desktop use Settings → Plugins → **Add from repository** → `askads/claude-plugins`; on claude.ai add the connector directly: Settings → Connectors → **Add custom connector** → `https://mcp.askads.cloud/mcp`.
 
