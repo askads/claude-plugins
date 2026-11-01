@@ -1,6 +1,6 @@
 ---
 name: yandex-direct
-description: Working with Yandex Direct ad accounts through the Ask Ads MCP tools — campaigns, performance statistics, budgets, account balance and overdraft, Yandex Metrica conversions. Use when the user asks about their Yandex Direct advertising, spend, clicks, CPC/CPA, keywords, balance or conversion goals.
+description: Working with Yandex Direct ad accounts through the Ask Ads MCP tools — campaigns, performance statistics, budgets, account balance and overdraft, Yandex Metrica conversions, Yandex Webmaster search data. Use when the user asks about their Yandex Direct advertising, spend, clicks, CPC/CPA, keywords, balance, conversion goals, or how their site looks in Yandex search.
 ---
 
 # Яндекс Директ через Ask Ads MCP
@@ -58,10 +58,19 @@ description: Working with Yandex Direct ad accounts through the Ask Ads MCP tool
 - Если тулов с префиксом `metrika_` нет — бандл Метрики недоступен; конверсии бери
   из полей Директа (`Conversions`, `CostPerConversion` в отчёте).
 
+## Органический поиск из Вебмастера (если доступны тулы `webmaster_*`)
+
+- `webmaster_list_sites` — начинай с него: `host_id` вида `https:example.com:443` нужен остальным тулам.
+- `webmaster_get_site_summary` — ИКС, страницы в поиске и исключённые, число проблем;
+  `webmaster_get_site_diagnostics` — сами проблемы.
+- `webmaster_get_popular_queries` / `webmaster_get_search_queries_history` — запросы
+  с показами и кликами в органике: полезно сверить с фразами Директа.
+- Статистика и диагностика требуют подтверждённых прав на сайт (`verified`).
+
 ## Прочие инструменты
 
 Структура: `list_ad_groups`, `list_ads`, `list_keywords`, `get_bid_modifiers`.
-Расширения объявлений: `get_sitelinks`, `get_callouts`, `get_vcards`, `get_ad_images`,
+Расширения объявлений: `get_sitelinks`, `get_callouts`, `get_ad_images`,
 `get_ad_videos`, `get_creatives`. Справочники: `get_regions` (id гео), `get_dictionaries`
 (валюты, ставки НДС и т.п.). Квота API: `get_quota` (остаток Units за сутки).
 

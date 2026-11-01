@@ -1,0 +1,37 @@
+{
+  "name": "yandex-webmaster",
+  "displayName": "Yandex Webmaster (local server)",
+  "version": "1.0.0",
+  "description": "Yandex Webmaster via the local mcp-yandex-webmaster npm server: site diagnostics, indexing, search queries, sitemaps, external links, recrawl. Sign in with Yandex right in the chat; a ready-made token is optional (for CI). Requires Node.js 20+.",
+  "author": {
+    "name": "Ask Ads",
+    "email": "support@askads.ru",
+    "url": "https://askads.ru"
+  },
+  "homepage": "https://github.com/askads/mcp-yandex-webmaster",
+  "repository": "https://github.com/askads/claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "yandex-webmaster",
+    "webmaster",
+    "yandex",
+    "seo",
+    "indexing"
+  ],
+  "userConfig": {
+    "token": {
+      "type": "string",
+      "title": "Yandex Webmaster OAuth token (optional)",
+      "description": "Leave empty to sign in with Yandex from the chat (\"connect Yandex Webmaster\"). Set only for CI or headless setups.",
+      "sensitive": true,
+      "required": false,
+      "default": ""
+    },
+    "host_id": {
+      "type": "string",
+      "title": "Default site host_id (optional)",
+      "description": "For example https:example.com:443; leave empty to pick a site from list_sites",
+      "default": ""
+    }
+  }
+}

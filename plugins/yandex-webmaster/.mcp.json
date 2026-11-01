@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "yandex-webmaster": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-yandex-webmaster@latest"
+      ],
+      "env": {
+        "YANDEX_OAUTH_TOKEN": "${user_config.token}",
+        "YANDEX_WEBMASTER_HOST_ID": "${user_config.host_id}"
+      }
+    }
+  }
+}

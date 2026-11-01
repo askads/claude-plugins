@@ -1,8 +1,8 @@
 {
   "name": "yandex-direct-api",
-  "displayName": "Yandex Direct API (own token)",
-  "version": "1.0.0",
-  "description": "Full Yandex Direct API v5 with your own OAuth token via the mcp-yandex-direct npm server: statistics, keywords, bids, budgets — including write tools behind explicit confirmation. Requires Node.js 20+.",
+  "displayName": "Yandex Direct API (local server)",
+  "version": "1.1.0",
+  "description": "Full Yandex Direct API v5 via the local mcp-yandex-direct npm server: statistics, keywords, bids, budgets — including write tools. Sign in with Yandex right in the chat; a ready-made token is optional (for CI). Requires Node.js 20+.",
   "author": {
     "name": "Ask Ads",
     "email": "support@askads.ru",
@@ -21,10 +21,11 @@
   "userConfig": {
     "token": {
       "type": "string",
-      "title": "Yandex Direct OAuth token",
-      "description": "OAuth token with Yandex Direct API access — see github.com/askads/mcp-yandex-direct for how to get one",
+      "title": "Yandex Direct OAuth token (optional)",
+      "description": "Leave empty to sign in with Yandex from the chat (\"connect Yandex Direct\"). Set only for CI or headless setups.",
       "sensitive": true,
-      "required": true
+      "required": false,
+      "default": ""
     },
     "client_login": {
       "type": "string",

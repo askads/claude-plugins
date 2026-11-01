@@ -1,8 +1,8 @@
 {
   "name": "vk-ads",
-  "displayName": "VK Ads (own token)",
-  "version": "1.0.0",
-  "description": "VK Ads (VK Реклама) via the mcp-vk-ads npm server with your API token: ad plans, banners, statistics, budgets. Requires Node.js 20+.",
+  "displayName": "VK Ads (local server)",
+  "version": "1.1.0",
+  "description": "VK Ads (VK Реклама) via the local mcp-vk-ads npm server: ad plans, banners, statistics, budgets. Connect from the chat with your VK Ads API app (client_id + client_secret, auto-refreshed); a ready-made token is optional (agency clients, CI). Requires Node.js 20+.",
   "author": {
     "name": "Ask Ads",
     "email": "support@askads.ru",
@@ -20,10 +20,11 @@
   "userConfig": {
     "token": {
       "type": "string",
-      "title": "VK Ads access token",
-      "description": "VK Ads API access token — see github.com/askads/mcp-vk-ads for how to get one",
+      "title": "VK Ads access token (optional)",
+      "description": "Leave empty to connect from the chat (\"connect VK Ads\"). Needed only for agency client accounts or CI; such a token lives about a day and is not refreshed.",
       "sensitive": true,
-      "required": true
+      "required": false,
+      "default": ""
     }
   }
 }
